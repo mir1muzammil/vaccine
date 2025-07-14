@@ -16,7 +16,6 @@ include('Includes/db.php');
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
         <style>
-/* Base & Background */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -110,7 +109,7 @@ input::placeholder {
   background: #1565c0;
 }
 
-/* Table Styling */
+
 table {
   text-align: center;
 }
@@ -124,7 +123,7 @@ table {
   background-color: #f3f7fb;
 }
 
-/* Alerts */
+
 .alert {
   border-radius: 15px;
   font-weight: 500;
@@ -145,7 +144,6 @@ table {
   }
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .btn-group {
     flex-direction: column;

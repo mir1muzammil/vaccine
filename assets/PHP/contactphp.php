@@ -3,7 +3,6 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-// Correct path based on your structure
 require __DIR__ . '/PHPMailer-master/src/Exception.php';
 require __DIR__ . '/PHPMailer-master/src/PHPMailer.php';
 require __DIR__ . '/PHPMailer-master/src/SMTP.php';
@@ -19,18 +18,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail = new PHPMailer(true);
 
         try {
-            // SMTP settings
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->Username = 'for.daraz.selling@gmail.com';         // 🔸 your Gmail
-            $mail->Password = 'dtea mpah dxdd kbif';         // Replace with your 16-digit app password
+            $mail->Username = 'for.daraz.selling@gmail.com'; 
+            $mail->Password = 'dtea mpah dxdd kbif';         
             $mail->SMTPSecure = 'tls';
             $mail->Port       = 587;
 
             // Mail setup
             $mail->setFrom($email, $name);
-            $mail->addAddress('lolfarig@gmail.com');         // Your receiving email
+            $mail->addAddress('lolfarig@gmail.com');         
 
             $mail->isHTML(true);
             $mail->Subject = "New Contact Form: $subject";

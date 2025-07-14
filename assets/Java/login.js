@@ -1,4 +1,4 @@
- //  POPUP
+
     function openModal(formType) {
         document.getElementById('authModal').style.display = 'block';
         switchForm(formType);

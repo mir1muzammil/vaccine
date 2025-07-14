@@ -27,7 +27,6 @@ if (isset($_POST['reschedule'])) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
-        /* Define colors and gradients as variables for consistency */
         :root {
             --dashboard-blue-dark: #1e3c72;
             --dashboard-blue-medium: #2a5298;
@@ -70,7 +69,6 @@ if (isset($_POST['reschedule'])) {
             100% { background-position: 0% 50%; }
         }
 
-        /* Floating particles background */
         body::before {
             content: '';
             position: fixed;
@@ -122,7 +120,7 @@ if (isset($_POST['reschedule'])) {
             width: 100%;
         }
 
-        /* Main Content Wrapper - Matching Vaccine Page */
+
         .main-content {
             margin-left: 250px;
             padding: 40px;
@@ -153,7 +151,6 @@ if (isset($_POST['reschedule'])) {
             pointer-events: none;
         }
 
-        /* Dashboard Header - Matching Vaccine Page */
         .main-content > h2 {
             font-size: clamp(2.2rem, 5vw, 3.5rem);
             font-weight: 900;
@@ -196,7 +193,6 @@ if (isset($_POST['reschedule'])) {
             100% { left: 100%; }
         }
 
-        /* Table Styling - Exact Match to Vaccine Page */
         .table-container {
             background: rgba(255, 255, 255, 0.9);
             border-radius: 20px;
@@ -242,7 +238,6 @@ if (isset($_POST['reschedule'])) {
             background-color: #eef5ff;
         }
 
-        /* Status Badge Styling - Matching Vaccine Page */
         .status-badge {
             padding: 6px 12px;
             border-radius: 20px;
@@ -267,7 +262,6 @@ if (isset($_POST['reschedule'])) {
             color: white;
         }
 
-        /* Button Styling */
         .btn {
             border-radius: 10px;
             font-weight: 600;
@@ -302,7 +296,6 @@ if (isset($_POST['reschedule'])) {
             box-shadow: 0 8px 20px rgba(243, 156, 18, 0.6);
         }
 
-        /* Form Controls */
         .form-control {
             background-color: rgba(255, 255, 255, 0.9);
             border: 1px solid #ddd;
@@ -320,7 +313,7 @@ if (isset($_POST['reschedule'])) {
             color: #333;
         }
 
-        /* Action Forms Styling */
+   
         .action-forms {
             display: flex;
             flex-direction: column;
@@ -338,7 +331,6 @@ if (isset($_POST['reschedule'])) {
             min-width: 140px;
         }
 
-        /* Responsive Fixes - Matching Vaccine Page */
         @media (max-width: 768px) {
             .main-content {
                 padding: 25px;
@@ -410,7 +402,6 @@ if (isset($_POST['reschedule'])) {
             }
         }
 
-        /* Fade-In Animation - Matching Vaccine Page */
         @keyframes fadeIn {
             0% {
                 opacity: 0;
@@ -464,7 +455,6 @@ if (isset($_POST['reschedule'])) {
                     $res = $conn->query($sql);
                     $i = 1;
                     while ($row = $res->fetch_assoc()) {
-                        // Add status badge styling
                         $statusClass = '';
                         switch(strtolower($row['status'])) {
                             case 'pending':

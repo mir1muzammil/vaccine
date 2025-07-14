@@ -32,7 +32,6 @@ $currentPage = 'reports';
             margin: 30px;
         }
 
-        /* Gradient Header Like Admin Dashboard */
         .main-content h2 {
             font-size: clamp(2.2rem, 4vw, 3rem);
             font-weight: 900;
@@ -72,7 +71,6 @@ $currentPage = 'reports';
             100% { left: 100%; }
         }
 
-        /* Card Styling */
         .card {
             background: rgba(255, 255, 255, 0.9);
             border-radius: 20px;
@@ -81,7 +79,6 @@ $currentPage = 'reports';
             border: 1px solid rgba(255,255,255,0.2);
         }
 
-        /* Table Styling */
         .table-container {
             background: rgba(255, 255, 255, 0.9);
             border-radius: 20px;
@@ -124,7 +121,6 @@ $currentPage = 'reports';
             background-color: #eef5ff;
         }
 
-        /* Status Badge Styling */
         .status-badge {
             padding: 6px 12px;
             border-radius: 20px;
@@ -192,7 +188,6 @@ $currentPage = 'reports';
           </tr></thead><tbody>";
 
     while ($row = $res->fetch_assoc()) {
-        // Add status badge styling
         $statusClass = '';
         switch(strtolower($row['status'])) {
             case 'pending':

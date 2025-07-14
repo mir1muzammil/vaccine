@@ -115,7 +115,6 @@ $isLoggedIn = isset($_SESSION['user_name']);
             }
         }
 
-        /* HERO SECTION */
         .hero {
             background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
                 url('../img/banner.jpg') center/cover no-repeat;
@@ -203,7 +202,6 @@ $isLoggedIn = isset($_SESSION['user_name']);
             }
         }
 
-        /* POPUP */
         .modal {
             display: none;
             font-family: 'Poppins', sans-serif;
@@ -293,7 +291,6 @@ $isLoggedIn = isset($_SESSION['user_name']);
         }
 
 
-        /* CARDS */
         .features {
             margin-top: 20px;
             font-family: 'Poppins', sans-serif;
@@ -431,7 +428,6 @@ $isLoggedIn = isset($_SESSION['user_name']);
             color: #555;
         }
 
-        /* Testimonials Section */
         .testimonials {
             font-family: 'Poppins', sans-serif;
             padding: 80px 20px;
@@ -483,7 +479,6 @@ $isLoggedIn = isset($_SESSION['user_name']);
             color: #0d47a1;
         }
 
-        /* CTA Section */
         .cta {
             background: linear-gradient(to right, #e3f2fd, #bbdefb);
             font-family: 'Poppins', sans-serif;
@@ -538,7 +533,6 @@ $isLoggedIn = isset($_SESSION['user_name']);
             color: white;
         }
 
-        /* Footer */
         .site-footer {
             background-color: #002244;
             font-family: 'Poppins', sans-serif;

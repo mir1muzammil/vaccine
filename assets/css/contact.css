@@ -8,7 +8,6 @@ body {
   padding: 0;
 }
 
-/* NAVBAR */
 header {
   background-color: white;
   font-family: "Poppins", sans-serif;
@@ -100,7 +99,6 @@ nav a:hover::after {
   }
 }
 
-/* CONTACT US SECTION */
 .contact-section {
   padding: 80px 20px;
   font-family: "Poppins", sans-serif;
@@ -208,7 +206,6 @@ nav a:hover::after {
   }
 }
 
-/* ALERT HANDLING */
 .custom-alert {
   width: 100%;
   max-width: 600px;
@@ -250,7 +247,6 @@ nav a:hover::after {
   }
 }
 
-/* MAP */
 .map {
   width: 100%;
   max-width: 800px;
@@ -262,7 +258,6 @@ nav a:hover::after {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer */
 .site-footer {
   font-family: "Poppins", sans-serif;
   background-color: #002244;

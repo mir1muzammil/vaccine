@@ -1,9 +1,9 @@
-// NAVBAR
+
 function toggleMenu(toggle) {
   toggle.classList.toggle("open");
   document.getElementById("nav-links").classList.toggle("active");
 }
-//  POPUP
+
 function openModal(formType) {
   document.getElementById("authModal").style.display = "block";
   switchForm(formType);

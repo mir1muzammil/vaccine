@@ -1,6 +1,6 @@
 <?php
 include('../includes/db.php');
-$currentPage = 'reports'; // This variable is for the sidebar, not directly used in the current page's display logic
+$currentPage = 'reports'; 
 ?>
 <!DOCTYPE html>
 <html>
@@ -10,7 +10,7 @@ $currentPage = 'reports'; // This variable is for the sidebar, not directly used
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
-        /* Define colors and gradients as variables for consistency */
+       
         :root {
             --dashboard-blue-dark: #1e3c72;
             --dashboard-blue-medium: #2a5298;
@@ -53,7 +53,7 @@ $currentPage = 'reports'; // This variable is for the sidebar, not directly used
             100% { background-position: 0% 50%; }
         }
 
-        /* Floating particles background */
+      
         body::before {
             content: '';
             position: fixed;
@@ -69,21 +69,21 @@ $currentPage = 'reports'; // This variable is for the sidebar, not directly used
             z-index: 0;
         }
 
-        /* Main Content Wrapper */
+    
         .main-content {
-            margin-left: 250px; /* Adjusted to match the enhanced sidebar width */
-            padding: 40px; /* Increased padding */
-            width: calc(100% - 250px); /* Adjusted width */
-            background: var(--white-glass-bg); /* Glassmorphism background */
-            border-radius: 25px; /* Rounded corners */
-            margin: 20px; /* Margin around the main content */
-            backdrop-filter: blur(25px); /* Blur effect */
+            margin-left: 250px;
+            padding: 40px; 
+            width: calc(100% - 250px);
+            background: var(--white-glass-bg);
+            border-radius: 25px;
+            margin: 20px; 
+            backdrop-filter: blur(25px); 
             box-shadow:
                 0 20px 40px rgba(0, 0, 0, 0.15),
                 0 8px 20px rgba(0, 0, 0, 0.1),
                 inset 0 1px 0 var(--white-glass-border);
             border: 1px solid var(--white-glass-border);
-            animation: fadeIn 1.2s ease-out; /* Fade-in animation */
+            animation: fadeIn 1.2s ease-out;
             position: relative;
             z-index: 1;
         }
@@ -100,7 +100,6 @@ $currentPage = 'reports'; // This variable is for the sidebar, not directly used
             pointer-events: none;
         }
 
-        /* Dashboard Header */
         .main-content > h2 {
             font-size: clamp(2.2rem, 5vw, 3.5rem);
             font-weight: 900;
@@ -143,7 +142,6 @@ $currentPage = 'reports'; // This variable is for the sidebar, not directly used
             100% { left: 100%; }
         }
 
-        /* Button Styling */
         .btn-outline-primary {
             background: linear-gradient(90deg, var(--accent-blue-light), var(--accent-blue-dark));
             border: none;
@@ -163,7 +161,6 @@ $currentPage = 'reports'; // This variable is for the sidebar, not directly used
             color: white;
         }
 
-        /* Reports Table Styling - Applied to Match Vaccine Page */
         .table-container {
             background: rgba(255, 255, 255, 0.9);
             border-radius: 20px;
@@ -209,7 +206,6 @@ $currentPage = 'reports'; // This variable is for the sidebar, not directly used
             background-color: #eef5ff;
         }
 
-        /* Status Badge Styling */
         .status-badge {
             padding: 6px 12px;
             border-radius: 20px;
@@ -234,13 +230,12 @@ $currentPage = 'reports'; // This variable is for the sidebar, not directly used
             color: white;
         }
 
-        /* Responsive Fixes */
         @media (max-width: 768px) {
             .main-content {
                 padding: 25px;
                 margin: 15px;
-                margin-left: 0; /* Remove fixed margin for small screens */
-                width: auto; /* Allow content to take full width */
+                margin-left: 0;
+                width: auto; 
             }
 
             .main-content > h2 {
@@ -297,11 +292,10 @@ $currentPage = 'reports'; // This variable is for the sidebar, not directly used
                 margin: 10px;
             }
             .btn-outline-primary {
-                width: 100%; /* Full width button */
+                width: 100%; 
             }
         }
 
-        /* Fade-In Animation */
         @keyframes fadeIn {
             0% {
                 opacity: 0;
@@ -313,7 +307,6 @@ $currentPage = 'reports'; // This variable is for the sidebar, not directly used
             }
         }
 
-        /* fadeInUp for elements */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -339,7 +332,6 @@ $currentPage = 'reports'; // This variable is for the sidebar, not directly used
 
     <?php
     if (isset($_POST['export'])) {
-        // Add your export logic here if needed
         echo "<div class='alert alert-success'>Report exported successfully.</div>";
     }
     ?>
@@ -362,7 +354,6 @@ $currentPage = 'reports'; // This variable is for the sidebar, not directly used
                                      LEFT JOIN vaccines v ON b.vaccine_id = v.id");
 
                 while ($row = $res->fetch_assoc()) {
-                    // Determine status class based on the 'status' column value
                     $statusClass = '';
                     switch(strtolower($row['status'])) {
                         case 'pending':
@@ -375,7 +366,7 @@ $currentPage = 'reports'; // This variable is for the sidebar, not directly used
                             $statusClass = 'Cancelled';
                             break;
                         default:
-                            $statusClass = 'Pending'; // Default for unknown statuses
+                            $statusClass = 'Pending'; 
                     }
 
                     echo "<tr>

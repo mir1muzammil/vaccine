@@ -8,7 +8,6 @@ body {
     padding: 0;
 }
 
-/* NAVBAR */
 header {
     background-color: white;
     font-family: 'Poppins', sans-serif;
@@ -101,7 +100,6 @@ nav a:hover::after {
     }
 }
 
-/* HERO SECTION */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url('assets/img/about-us\ 2.webp') center/cover no-repeat;
@@ -189,7 +187,6 @@ nav a:hover::after {
     }
 }
 
-/* POPUP */
 .modal {
     display: none;
     font-family: 'Poppins', sans-serif;
@@ -278,7 +275,6 @@ nav a:hover::after {
     }
 }
 
-/* Available Vaccines Section */
 .available-vaccines {
     padding: 80px 20px;
     font-family: 'Poppins', sans-serif;
@@ -425,7 +421,6 @@ nav a:hover::after {
     }
 }
 
-/* ELIGIBILITY SECTION */
 .eligibility {
     padding: 80px 20px;
     text-align: center;
@@ -497,7 +492,6 @@ nav a:hover::after {
     }
 }
 
-/* How to Book Section */
 .how-to-book {
     padding: 80px 20px;
     text-align: center;
@@ -590,7 +584,6 @@ nav a:hover::after {
     }
 }
 
-/* Vaccine Safety & FAQs */
 .vaccine-faqs {
     padding: 80px 20px;
     font-family: 'Poppins', sans-serif;
@@ -685,7 +678,6 @@ nav a:hover::after {
     }
 }
 
-/* Call to Action Section */
 .cta {
     background: linear-gradient(to right, #e3f2fd, #bbdefb);
     padding: 60px 20px;
@@ -740,7 +732,6 @@ nav a:hover::after {
     color: white;
 }
 
-/* Footer */
 .site-footer {
     background-color: #002244;
     font-family: 'Poppins', sans-serif;

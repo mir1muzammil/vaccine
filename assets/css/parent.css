@@ -1,5 +1,4 @@
 
-/* Base & Background */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,14 +20,12 @@ body {
   50% { background-position: 100% 50%; }
 }
 
-/* Headings */
 h2, h4, h5 {
   font-weight: 700;
   text-shadow: none;
   color: #0d47a1;
 }
 
-/* Sections */
 .section {
   display: none;
   animation: fadeIn 0.6s ease-in-out;
@@ -38,7 +35,6 @@ h2, h4, h5 {
   display: block;
 }
 
-/* Cards / Forms / Tables */
 form, table {
   background: #fff;
   padding: 25px;
@@ -48,7 +44,6 @@ form, table {
   color: #333;
 }
 
-/* Inputs */
 input, select {
   border-radius: 10px !important;
   padding: 12px !important;
@@ -62,7 +57,6 @@ input::placeholder {
   color: #999 !important;
 }
 
-/* Buttons */
 .btn-group .btn {
   font-weight: 500;
   border-radius: 50px;
@@ -89,7 +83,6 @@ input::placeholder {
   background: #1565c0;
 }
 
-/* Table Styling */
 table {
   text-align: center;
 }
@@ -103,7 +96,6 @@ table {
   background-color: #f3f7fb;
 }
 
-/* Alerts */
 .alert {
   border-radius: 15px;
   font-weight: 500;
@@ -112,7 +104,6 @@ table {
   border: 1px solid #90caf9;
 }
 
-/* Animations */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -124,7 +115,6 @@ table {
   }
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .btn-group {
     flex-direction: column;

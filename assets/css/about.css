@@ -8,7 +8,6 @@ body {
   padding: 0;
 }
 
-/* NAVBAR */
 header {
   background-color: white;
   font-family: "Poppins", sans-serif;
@@ -100,8 +99,6 @@ nav a:hover::after {
     display: flex;
   }
 }
-
-/* HERO SECTION */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../img/about-us.webp") center/cover no-repeat;
@@ -189,7 +186,6 @@ nav a:hover::after {
   }
 }
 
-/* POPUP */
 .modal {
   display: none;
   font-family: "Poppins", sans-serif;
@@ -278,7 +274,7 @@ nav a:hover::after {
   }
 }
 
-/* WHO WE ARE */
+
 .about-highlight {
   padding: 80px 20px;
   font-family: "Poppins", sans-serif;
@@ -397,7 +393,7 @@ nav a:hover::after {
   }
 }
 
-/* MISSION */
+
 .mission-vision {
   padding: 80px 20px;
   color: #0d47a1;
@@ -483,7 +479,6 @@ nav a:hover::after {
   }
 }
 
-/* HOW SYSTEM WORK */
 .system-works {
   padding: 80px 20px;
   text-align: center;
@@ -559,7 +554,6 @@ nav a:hover::after {
   }
 }
 
-/* WHY CHOOSE US */
 .why-choose-us {
   padding: 80px 20px;
   text-align: center;
@@ -634,7 +628,6 @@ nav a:hover::after {
   }
 }
 
-/* OUR TEAM */
 .meet-team {
   padding: 80px 20px;
   text-align: center;
@@ -698,7 +691,6 @@ nav a:hover::after {
   }
 }
 
-/* CTA Section */
 .cta {
   background: linear-gradient(to right, #e3f2fd, #bbdefb);
   padding: 60px 20px;
@@ -753,7 +745,6 @@ nav a:hover::after {
   color: white;
 }
 
-/* Footer */
 .site-footer {
   background-color: #002244;
   color: #ffffff;

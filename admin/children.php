@@ -39,7 +39,6 @@ if (isset($_GET['del'])) {
             margin: 30px;
         }
 
-        /* Gradient Header Like Admin Dashboard */
         .main-content h2 {
             font-size: clamp(2.2rem, 4vw, 3rem);
             font-weight: 900;
@@ -79,7 +78,6 @@ if (isset($_GET['del'])) {
             100% { left: 100%; }
         }
 
-        /* Add Hospital Form */
         form {
             background: rgba(255,255,255,0.2);
             border-radius: 20px;
@@ -120,7 +118,6 @@ if (isset($_GET['del'])) {
             transform: scale(1.03);
         }
 
-        /* Table Styling */
         .table-container {
             background: rgba(255, 255, 255, 0.9);
             border-radius: 20px;
@@ -283,7 +280,6 @@ document.getElementById('parentSelect').addEventListener('change', function () {
         return;
     }
 
-    // Add loading state
     childName.classList.add('loading');
     childAge.classList.add('loading');
     childContact.classList.add('loading');
@@ -308,7 +304,6 @@ document.getElementById('parentSelect').addEventListener('change', function () {
             childContact.value = '';
         })
         .finally(() => {
-            // Remove loading state
             childName.classList.remove('loading');
             childAge.classList.remove('loading');
             childContact.classList.remove('loading');

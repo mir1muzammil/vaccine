@@ -3,7 +3,6 @@
 
 <style>
     :root {
-        /* Define colors based on the dashboard's gradient and accent */
         --dashboard-blue-dark: #1e3c72;
         --dashboard-blue-medium: #2a5298;
         --dashboard-blue-light: #3498db;
@@ -29,25 +28,25 @@
     }
 
     .sidebar {
-        width: 250px; /* Slightly wider */
+        width: 250px; 
         background: linear-gradient(180deg, var(--dashboard-blue-dark) 0%, var(--dashboard-grey-dark) 100%); /* Use dashboard gradient */
         color: var(--text-light);
-        padding: 30px 15px; /* More padding */
+        padding: 30px 15px;
         height: 100vh;
         position: fixed;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
-        z-index: 10; /* Ensure it's above other elements if needed */
-        backdrop-filter: blur(10px); /* Glassmorphism effect */
-        border-right: 1px solid var(--glass-border); /* Border for glass effect */
+        box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3); 
+        z-index: 10;
+        backdrop-filter: blur(10px);
+        border-right: 1px solid var(--glass-border);
     }
 
     .sidebar h4 {
         color: var(--text-light);
-        margin-bottom: 40px; /* More space */
-        font-size: 1.6rem; /* Larger heading */
+        margin-bottom: 40px;
+        font-size: 1.6rem; 
         font-weight: 700;
         text-align: center;
         text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -60,16 +59,16 @@
     }
 
     .sidebar .nav-item {
-        margin-bottom: 10px; /* Space between items */
+        margin-bottom: 10px;
     }
 
     .sidebar a {
         color: var(--text-light);
         text-decoration: none;
-        display: flex; /* Use flex for icon and text alignment */
+        display: flex; 
         align-items: center;
-        padding: 12px 20px; /* Larger clickable area */
-        border-radius: 12px; /* More rounded corners for softness */
+        padding: 12px 20px; 
+        border-radius: 12px;
         transition: all 0.3s ease;
         position: relative;
         overflow: hidden;
@@ -77,24 +76,23 @@
     }
 
     .sidebar a .fa-solid {
-        margin-right: 12px; /* More space for icon */
-        font-size: 1.1rem; /* Slightly larger icons */
+        margin-right: 12px;
+        font-size: 1.1rem; 
     }
 
     .sidebar a:hover {
-        background: rgba(255, 255, 255, 0.2); /* Lighter glass effect on hover */
-        transform: translateX(5px); /* Subtle slide effect */
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateX(5px);
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
 
-    /* Active link styles to match dashboard header/card accents */
     .sidebar a.active {
-        background: linear-gradient(90deg, var(--accent-blue), #2980b9); /* Vibrant gradient for active state */
+        background: linear-gradient(90deg, var(--accent-blue), #2980b9); 
         color: white;
         font-weight: 600;
-        box-shadow: 0 0 10px rgba(52, 152, 219, 0.7), 0 0 20px rgba(52, 152, 219, 0.5); /* Glowing effect */
-        transform: scale(1.02); /* Slightly pop out */
-        border: 1px solid rgba(255, 255, 255, 0.5); /* Stronger border for active */
+        box-shadow: 0 0 10px rgba(52, 152, 219, 0.7), 0 0 20px rgba(52, 152, 219, 0.5);
+        transform: scale(1.02); 
+        border: 1px solid rgba(255, 255, 255, 0.5); 
     }
 
     .sidebar a.active::before {
@@ -116,9 +114,9 @@
 
 
     .sidebar .logout-btn {
-        background: linear-gradient(90deg, #dc3545, #bb2d3b); /* Red gradient for logout */
+        background: linear-gradient(90deg, #dc3545, #bb2d3b); 
         color: white;
-        border: none; /* Remove default button border */
+        border: none; 
         padding: 12px 15px;
         border-radius: 12px;
         font-weight: 600;
@@ -133,13 +131,13 @@
     }
 
     .main-content {
-        margin-left: 250px; /* Adjust margin for wider sidebar */
+        margin-left: 250px;
         padding: 30px;
         width: calc(100% - 250px);
-        /* The main-content background is handled by the dashboard body style */
+
     }
 
-    /* Responsive adjustments */
+  
     @media (max-width: 992px) {
         .sidebar {
             width: 200px;
@@ -158,7 +156,7 @@
         .sidebar {
             width: 100%;
             height: auto;
-            position: relative; /* Make it block level on small screens */
+            position: relative;
             box-shadow: none;
             border-right: none;
             padding-bottom: 0;
@@ -168,10 +166,10 @@
             font-size: 1.4rem;
         }
         .sidebar .nav-links {
-            display: flex; /* Horizontal layout for nav links */
-            flex-wrap: wrap; /* Allow wrapping */
-            justify-content: center; /* Center items */
-            gap: 10px; /* Space between links */
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 10px;
             margin-bottom: 20px;
         }
         .sidebar .nav-item {
@@ -188,29 +186,29 @@
         }
         .sidebar .logout-btn {
             width: auto;
-            margin: 0 auto 20px auto; /* Center button */
+            margin: 0 auto 20px auto; 
             display: block;
         }
         .main-content {
             margin-left: 0;
             width: 100%;
-            padding-top: 20px; /* Adjust padding for content below sidebar */
+            padding-top: 20px; 
         }
     }
 
     @media (max-width: 480px) {
         .sidebar .nav-links {
-            flex-direction: column; /* Stack vertically on very small screens */
+            flex-direction: column;
             align-items: center;
         }
         .sidebar a {
-            width: calc(100% - 20px); /* Almost full width */
+            width: calc(100% - 20px);
             text-align: center;
-            justify-content: center; /* Center icon and text */
+            justify-content: center; 
         }
         .sidebar a .fa-solid {
-            margin-right: 0; /* Remove margin as text will be below or less space */
-            margin-bottom: 5px; /* Add margin below icon if stacked */
+            margin-right: 0; 
+            margin-bottom: 5px; 
         }
     }
 </style>

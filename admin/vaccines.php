@@ -40,7 +40,6 @@ $currentPage = 'vaccines';
             }
         }
 
-        /* Floating particles background */
         body::before {
             content: '';
             position: fixed;
@@ -56,7 +55,6 @@ $currentPage = 'vaccines';
             z-index: 0;
         }
 
-        /* Main layout */
         .main-content {
             margin-left: 220px;
             padding: 40px;
@@ -86,7 +84,6 @@ $currentPage = 'vaccines';
             pointer-events: none;
         }
 
-        /* Page Header */
         .main-content h2 {
             font-size: clamp(2.2rem, 5vw, 3.5rem);
             font-weight: 900;
@@ -141,7 +138,6 @@ $currentPage = 'vaccines';
             }
         }
 
-        /* Card Wrapper */
         .card {
             background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
             border-radius: 20px;
@@ -179,7 +175,6 @@ $currentPage = 'vaccines';
             }
         }
 
-        /* Table */
         table {
             width: 100%;
             border-collapse: collapse;
@@ -249,7 +244,6 @@ $currentPage = 'vaccines';
             background-color: #eef5ff;
         }
 
-        /* Status Badge Styling */
         .status-badge {
             padding: 6px 12px;
             border-radius: 20px;
@@ -269,7 +263,6 @@ $currentPage = 'vaccines';
             color: white;
         }
 
-        /* Delete Button */
         .btn-sm {
             font-size: 0.85rem;
             padding: 8px 16px;
@@ -311,7 +304,6 @@ $currentPage = 'vaccines';
             transform: translateY(0) scale(0.98);
         }
 
-        /* Alert styling */
         .alert {
             border-radius: 12px;
             padding: 16px 20px;
@@ -339,7 +331,6 @@ $currentPage = 'vaccines';
             }
         }
 
-        /* Responsive Design */
         @media (max-width: 768px) {
             .main-content {
                 margin-left: 0;
@@ -386,7 +377,6 @@ $currentPage = 'vaccines';
             }
         }
 
-        /* Animation */
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -399,7 +389,6 @@ $currentPage = 'vaccines';
             }
         }
 
-        /* Staggered table row animation */
         tbody tr {
             animation: fadeInUp 0.6s ease-out forwards;
             opacity: 0;
@@ -441,12 +430,10 @@ $currentPage = 'vaccines';
             }
         }
 
-        /* Smooth scrolling */
         html {
             scroll-behavior: smooth;
         }
 
-        /* Print styles */
         @media print {
             body {
                 background: white !important;

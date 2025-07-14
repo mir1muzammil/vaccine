@@ -1,9 +1,9 @@
-  // NAVBAR
+
     function toggleMenu(toggle) {
         toggle.classList.toggle("open");
         document.getElementById("nav-links").classList.toggle("active");
     }
-    //  POPUP
+
     function openModal(formType) {
         document.getElementById('authModal').style.display = 'block';
         switchForm(formType);
@@ -21,7 +21,6 @@
             modal.style.display = "none";
         }
     }
-    // Vaccine Safety & FAQs
     const faqItems = document.querySelectorAll('.faq-item');
     faqItems.forEach(item => {
         item.querySelector('.faq-question').addEventListener('click', () => {
@@ -31,7 +30,6 @@
             });
         });
     });
-    // MAP SELECTION
     function initMap() {
         const defaultCenter = { lat: 24.8607, lng: 67.0011 }; // Karachi
         const map = new google.maps.Map(document.getElementById("map"), {

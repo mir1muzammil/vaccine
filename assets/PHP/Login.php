@@ -5,7 +5,6 @@ include('../../Includes/db.php');
 $email = $_POST['email'];
 $password = $_POST['password'];
 
-// Check Admin Login
 $admin_query = "SELECT * FROM admins WHERE email = '$email'";
 $admin_result = mysqli_query($conn, $admin_query);
 
@@ -20,7 +19,6 @@ if (mysqli_num_rows($admin_result) == 1) {
     }
 }
 
-// Check Hospital Login
 $hospital_query = "SELECT * FROM hospitals WHERE email = '$email'";
 $hospital_result = mysqli_query($conn, $hospital_query);
 
@@ -35,7 +33,6 @@ if (mysqli_num_rows($hospital_result) == 1) {
     }
 }
 
-// Check Parent Login
 $parent_query = "SELECT * FROM parents WHERE email = '$email'";
 $parent_result = mysqli_query($conn, $parent_query);
 

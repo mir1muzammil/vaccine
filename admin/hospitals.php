@@ -33,7 +33,6 @@ $currentPage = 'hospitals';
             margin: 30px;
         }
 
-        /* Gradient Header Like Admin Dashboard */
         .main-content h2 {
             font-size: clamp(2.2rem, 4vw, 3rem);
             font-weight: 900;
@@ -72,8 +71,6 @@ $currentPage = 'hospitals';
             0% { left: -100%; }
             100% { left: 100%; }
         }
-
-        /* Add Hospital Form */
         form {
             background: rgba(255,255,255,0.2);
             border-radius: 20px;
@@ -114,7 +111,6 @@ $currentPage = 'hospitals';
             transform: scale(1.03);
         }
 
-        /* Table Styling */
         .table-container {
             background: rgba(255, 255, 255, 0.9);
             border-radius: 20px;

@@ -1,9 +1,8 @@
-// NAVBAR
     function toggleMenu(toggle) {
         toggle.classList.toggle("open");
         document.getElementById("nav-links").classList.toggle("active");
     }
-    // STATS
+
     const counters = document.querySelectorAll('.counter');
 
     counters.forEach(counter => {

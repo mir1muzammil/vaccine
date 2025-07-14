@@ -31,7 +31,6 @@ $currentPage = 'dashboard'; ?>
             100% { background-position: 0% 50%; }
         }
 
-        /* Floating particles background */
         body::before {
             content: '';
             position: fixed;
@@ -47,7 +46,6 @@ $currentPage = 'dashboard'; ?>
             z-index: 0;
         }
 
-        /* Dashboard Container */
         .main-content {
             background: rgba(255, 255, 255, 0.15);
             border-radius: 25px;
@@ -77,7 +75,6 @@ $currentPage = 'dashboard'; ?>
             pointer-events: none;
         }
 
-        /* Dashboard Cards */
         .dashboard-card {
             border-radius: 20px;
             padding: 35px;
@@ -234,7 +231,6 @@ $currentPage = 'dashboard'; ?>
             50% { background-position: 100% 50%; }
         }
 
-        /* Glass row background layer */
         .row {
             position: relative;
         }
@@ -249,7 +245,6 @@ $currentPage = 'dashboard'; ?>
             backdrop-filter: blur(5px);
         }
 
-        /* Responsive Fixes */
         @media (max-width: 768px) {
             .main-content {
                 padding: 25px;
@@ -277,7 +272,6 @@ $currentPage = 'dashboard'; ?>
             }
         }
 
-        /* Fade-In Animation */
         @keyframes fadeIn {
             0% {
                 opacity: 0;
@@ -289,7 +283,6 @@ $currentPage = 'dashboard'; ?>
             }
         }
 
-        /* Staggered animation for cards */
         .dashboard-card {
             animation: fadeInUp 0.8s ease-out forwards;
             opacity: 0;
@@ -322,18 +315,15 @@ $currentPage = 'dashboard'; ?>
             }
         }
 
-        /* Smooth scrolling */
         html {
             scroll-behavior: smooth;
         }
 
-        /* Focus styles for accessibility */
         .dashboard-card:focus-visible {
             outline: 2px solid #667eea;
             outline-offset: 2px;
         }
 
-        /* Print styles */
         @media print {
             body {
                 background: white !important;

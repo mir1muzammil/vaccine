@@ -22,7 +22,6 @@ if (isset($_POST['add_vaccine'])) {
         }
     }
 
-    // Store vaccine with image path
     $stmt = $conn->prepare("INSERT INTO vaccines (name, description, available, image) VALUES (?, ?, ?, ?)");
     $stmt->bind_param("ssis", $name, $desc, $available, $imagePath);
     $stmt->execute();
@@ -39,7 +38,7 @@ if (isset($_POST['add_vaccine'])) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
-        /* Define colors and gradients as variables for consistency */
+
         :root {
             --dashboard-blue-dark: #1e3c72;
             --dashboard-blue-medium: #2a5298;
@@ -82,7 +81,6 @@ if (isset($_POST['add_vaccine'])) {
             100% { background-position: 0% 50%; }
         }
 
-        /* Floating particles background */
         body::before {
             content: '';
             position: fixed;
@@ -98,21 +96,20 @@ if (isset($_POST['add_vaccine'])) {
             z-index: 0;
         }
 
-        /* Main Content Wrapper */
         .main-content {
-            margin-left: 250px; /* Adjusted to match the enhanced sidebar width */
-            padding: 40px; /* Increased padding */
-            width: calc(100% - 250px); /* Adjusted width */
-            background: var(--white-glass-bg); /* Glassmorphism background */
-            border-radius: 25px; /* Rounded corners */
-            margin: 20px; /* Margin around the main content */
-            backdrop-filter: blur(25px); /* Blur effect */
+            margin-left: 250px; 
+            padding: 40px; 
+            width: calc(100% - 250px); 
+            background: var(--white-glass-bg);
+            border-radius: 25px;
+            margin: 20px; 
+            backdrop-filter: blur(25px);
             box-shadow:
                 0 20px 40px rgba(0, 0, 0, 0.15),
                 0 8px 20px rgba(0, 0, 0, 0.1),
                 inset 0 1px 0 var(--white-glass-border);
             border: 1px solid var(--white-glass-border);
-            animation: fadeIn 1.2s ease-out; /* Fade-in animation */
+            animation: fadeIn 1.2s ease-out; 
             position: relative;
             z-index: 1;
         }
@@ -129,7 +126,6 @@ if (isset($_POST['add_vaccine'])) {
             pointer-events: none;
         }
 
-        /* Dashboard Header */
         .main-content > h2 {
             font-size: clamp(2.2rem, 5vw, 3.5rem);
             font-weight: 900;
@@ -172,9 +168,8 @@ if (isset($_POST['add_vaccine'])) {
             100% { left: 100%; }
         }
 
-        /* Form Styling */
         form {
-            background: rgba(255, 255, 255, 0.1); /* Slightly more opaque glass for form */
+            background: rgba(255, 255, 255, 0.1); 
             padding: 30px;
             border-radius: 15px;
             margin-bottom: 40px;
@@ -205,7 +200,6 @@ if (isset($_POST['add_vaccine'])) {
             color: var(--input-color);
         }
 
-        /* Adjust select dropdown arrow color for dark theme */
         .form-control[name="available"] {
             -webkit-appearance: none;
             -moz-appearance: none;
@@ -217,7 +211,7 @@ if (isset($_POST['add_vaccine'])) {
         }
 
         .form-control option {
-            background-color: var(--dashboard-grey-dark); /* Dark background for options */
+            background-color: var(--dashboard-grey-dark); 
             color: white;
         }
 
@@ -238,7 +232,7 @@ if (isset($_POST['add_vaccine'])) {
         }
 
         .alert-success {
-            background-color: rgba(40, 167, 69, 0.8); /* Green with transparency */
+            background-color: rgba(40, 167, 69, 0.8); 
             color: white;
             border-color: rgba(40, 167, 69, 0.9);
             border-radius: 10px;
@@ -247,7 +241,6 @@ if (isset($_POST['add_vaccine'])) {
             animation: fadeIn 0.5s ease-out;
         }
 
-        /* Reports Table Styling - Applied to Vaccine Table */
         .table-container {
             background: rgba(255, 255, 255, 0.9);
             border-radius: 20px;
@@ -293,7 +286,6 @@ if (isset($_POST['add_vaccine'])) {
             background-color: #eef5ff;
         }
 
-        /* Status Badge Styling */
         .status-badge {
             padding: 6px 12px;
             border-radius: 20px;
@@ -313,13 +305,12 @@ if (isset($_POST['add_vaccine'])) {
             color: white;
         }
 
-        /* Responsive Fixes */
         @media (max-width: 768px) {
             .main-content {
                 padding: 25px;
                 margin: 15px;
-                margin-left: 0; /* Remove fixed margin for small screens */
-                width: auto; /* Allow content to take full width */
+                margin-left: 0; 
+                width: auto;
             }
 
             .main-content > h2 {
@@ -384,11 +375,10 @@ if (isset($_POST['add_vaccine'])) {
                 padding: 15px;
             }
             .btn-primary {
-                width: 100%; /* Full width button */
+                width: 100%;
             }
         }
 
-        /* Fade-In Animation */
         @keyframes fadeIn {
             0% {
                 opacity: 0;
@@ -400,7 +390,6 @@ if (isset($_POST['add_vaccine'])) {
             }
         }
 
-        /* fadeInUp for elements */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
