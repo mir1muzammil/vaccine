@@ -1,5 +1,6 @@
 <?php
 session_start();
+$currentPage = 'booking';
 if (!isset($_SESSION['hospital_logged_in']) || !$_SESSION['hospital_logged_in']) {
     header("Location: ../login.php");
     exit;
